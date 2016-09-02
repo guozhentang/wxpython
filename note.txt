@@ -1,0 +1,11 @@
+
+2016-09.03
+复写的frame,一定要调用父类的初始化函数，且，一定要传送正确的参数
+frame,panel是窗口，panel是更高级好用的frame. 注意参数顺序，都是 1，父窗口，2，ID,  学到的关键字参数  size, pos,若没有父窗口，则为None,  若想系统分配ID，则填写-1
+wx.EVT_MOTION 是鼠标移动事件，动一次，产生一次，同时，event.GetPosition()获取的是鼠标相对于窗口的坐标
+wx.StaticText方法，和tkinter里的label一样，写一些text.参数：父窗口，ID,字符串
+wx.TextCtrl,相当于tkinter中的entry, 可以动态写入数据。
+
+
+wx.StaticBitmap  和wx.StaticText一样，两者可以互补成为tkinter里的label
+wx.Image创建图像对象,参数是（路径，格式），并且对象可以自己转换格式，比如采用ConvertToBitmap()
